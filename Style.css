@@ -1,33 +1,50 @@
 body{
-    Background-color: silver;
+  background-color: silver;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
 
+.table{
+  width: 80%;
+  margin: 15px auto;
+  border: 3px solid black;
+  box-shadow: 0 0 10px gray;
+  border-collapse: collapse;
+}
 
-.anton-regular
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.table td, th{
+  border: 1px solid gray;
+  padding: 6px;
+}
 
-  .table{
-        width: 80%;
-        margin: 15px auto;
-        border: 3px solid black;
-        box-shadow: 0 0 10px gray;
-        padding: 10px;
-        border-radius: 10px;
-  }
+.table thead{
+  background-color: slategray;
+}
 
-  .table td, th{
-    border: 1px solid gray;
-    padding: 6px;
-  }
+.table tbody>tr>td:last-child{
+  text-align: right;
+}
 
-  .table thead{
-    background-color: slategray;
-  }
+.table tbody tr:hover{
+  cursor:pointer;
+  background-color:rgb(40, 34, 75);
+  color:white;
+  font-weight: bold;
+}
 
-  .table tfoot{
-background-color: black;
-color: white;
-text-align: center;
-  }
+.table tfoot{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+#container{
+  background-color: white;
+  box-shadow: 0 0 10px gray;
+  height: 100vh; /*vertical height*/
+  padding: 15px;
+  width: 60%;
+  margin: 0 auto;
+}
